@@ -1,0 +1,90 @@
+anotação de formataçoes em html.
+ 
+essa é uma hierarquia de títulos. E isso não está diretamente relacionado ao tamanho do texto, mas sim a importância do título.
+<h1> é um header de nível 1 
+<h2> é um header de nível 2 e assim por diante.
+<p> é um parágrafo
+<br> é uma quebra de linha
+
+para envelopar um texto, usamos ctrl + shift + p e digitamos "wrap with abbreviation" e escolhemos a tag que queremos usar.
+
+diferença entre semantica e estilização:
+
+<b> deixara apenas em negrito. (isso é estilização)
+<strong> alem de deixar em negrito da um sentido pra frase dizendo que ela está em negrito porque é forte. (isso é semantica)
+<i> deixa em itálico. (isso é estilização)
+<em> ênfase deixando também em itálico. (isso é semantica)
+<mark> destaca o texto com uma cor de fundo.  
+<del> riscado. (semantica)
+<s> riscado. (estilização)
+<ins> sublinhado. (semantica)
+<u> sublinhado. (estilização)
+<q> deixa o texto entre aspas. (semantica, estilização seria colcoar as aspas manualmente)
+<blockquote> deixa o texto em bloco. 
+<abbr title=""> deixa o texto com uma borda pontilhada e quando passamos o mouse em cima aparece o significado da abreviação.
+<cite> deixa o texto em itálico e com uma fonte menor. (representa uma citação)
+para inserir simbolos dedicados como '<' '>' e "&" usamos "&lt;" "&gt;" e "&amp;" respectivamente.
+    
+codigos e matematiques:
+
+<sub> deixa o texto em subscrito.
+<sup> deixa o texto em sobrescrito.
+<pre> deixa o texto em uma fonte monoespaçada e com quebra de linha. (representa um texto pré formatado)
+<code> deixa o texto em uma fonte monoespaçada.(cada letra tem o mesmo tamanho)
+<kbd> deixa o texto em uma fonte monoespaçada e com um fundo cinza. (representa um botão do teclado)
+<var> deixa o texto em itálico e com uma fonte monoespaçada. (representa uma variável)
+
+listas:
+<ol type=""> lista ordenada (type é o tipo de lista, pode ser 1, a, A, i, I)
+    <li> item da lista
+</ol>
+<ul> lista não ordenada (type é o tipo de lista, pode ser circle, square, disc)
+    <li> item da lista
+</ul>
+type é o tipo de lista, e start é o número que a lista começa.
+<dl> lista de definição
+    <dt> termo
+    <dd> definição
+</dl>
+
+links externos:
+<a href=""> hiperlink (a vem de âncora)
+target="_blank" atributos da tag <a> que diz para abri o link na aba em branco
+target="_self" abre o link na propria página
+href é um atributo essencial da tag <a> e referencia a URL
+atributo rel de <a>:
+rel="external" diz que é uma página externa
+rel="next" diz que a é a próxima página
+rel="previous" diz que é a página anterior
+rel="nofollow" diz que o link não tem o seu aval, usado para patrocínios
+atributos para dowload:
+<a href="endereço_do_arquivo" dowload"nome_do_arquivo" type"tipo do arquivo(zip, pdf etc)">
+
+midia:
+<picture>
+ <source media="(max_widht: (X) px)" srcset="endereço foto tamanho (X)" type="image/png">
+ <source media="(max_widht: (Y) px)" srcset="endereço foto tamanho (Y)" type="image/png">
+  <img src= "endereço foto padrão.png" alt="imagem flexivel">
+</picture>
+<audio src"endereço" controls autoplay> maneira facil
+ou
+<audio>
+ <source src="endereço_midia.mp3" type="audio/mpeg">
+ <source src="endereço_midia.wav" type="audio/wav">
+</audio>
+atributos tag audio:
+autoplay- tocar de uma vez 
+controls- mostra os controles de reprodução
+loop- loop no audio
+video- instalar handbrake (conversor de video)
+<video src"endereço" controls autoplay> maneira facil
+ou
+<video controls>
+ <source src="endereço" type="video/mp4"
+..
+</video>
+basicamente o source mostra as opções de formato
+importar video do youtube:
+vai no video e clica em compartilhar> incorporar> ele vai montar um codigo html pronto e é só copiar.
+-> cole o codigo html.
+formato mais recomendado (m4v)
